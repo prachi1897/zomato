@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>ZOMATO_FRONTEND</title>
+		<link rel="stylesheet" href="zomato_frontend.css">
+		</head>
+		<body>
+		<h1><mark>Zomato Ordering<mark></h1>
+
+
+
+		<div class="box">
+			<img src="Domino_pizza_logo.svg.png" alt="image1" id="img1">
+			<img src="McDonald's_Golden_Arches.svg.png"alt="image2" id="img2">
+			<img src="KFC_logo.svg.png"alt="image3"id="img3">
+			<img src="Screenshot_2017-07-05-12-43-11-722_edited.jpg" alt="img4" width="35%" id="img4">
+		</div>
+
+		<!--menu for dominos-->
+		<div class="menu1">
+		<ul>
+		<li>Peppy Paneer</li>
+		<input type="checkbox">
+		<li>Farm House</li>
+		<input type="checkbox">
+		<li>Mexican Green Wave</li>
+		<input type="checkbox">
+		<li>Country Special<li>
+		<input type="checkbox">
+		<li>Capsicum and Paneer</li>
+		<input type="checkbox">
+		</ul>
+		<button type="button">CheckOut</button>	
+		</div>
+
+
+		<!--menu for mcdonalds-->
+		<div class="menudonalds">
+		<ul>
+			<li>Mcveggie</li>
+			<input type="checkbox">
+			<li>McEgg</li>
+			<input type="checkbox">
+			<li>McChicken Grill</li>
+			<input type="checkbox">
+			<li>McAloo Tikki</li>
+			<input type="checkbox">
+		</ul>
+		<button type="button">CheckOut</button>
+		</div>
+
+
+<!--menu for KFC-->
+		<div class="kfcmenu">
+		<ul>
+		<li>Chicken Zinger</li>
+		<input type="checkbox">
+		<li>Chicken Popcorn</li>
+		<input type="checkbox">
+		<li>Paneer Zinger</li>
+		<input type="checkbox">
+		<li>Chicken Wings</li>
+		<input type="checkbox">
+		</ul>
+		<button type="button">CheckOut</button>
+		</div>
+
+		<!--menu for DD-->
+		<div class="ddmenu">
+		<ul>
+		<li>Hot Chocolate</li>
+		<input type="checkbox">
+		<li>Rainbow Donuts</li>
+		<input type="checkbox">
+		<li>Glazed Donuts</li>
+		<input type="checkbox">
+		<li>Spicy Donuts</li>
+		<input type="checkbox">
+		</ul>
+		<button type="button">CheckOut</button>
+		</div>
+
+		<script src="jquery-2.2.0.js"></script>
+		<script>
+		$('#img1').on('click',function(){
+
+			$('.menu1').addClass("menu2");
+
+			
+		});
+		</script>
+		<script>
+		$('#img2').on('click',function(){
+			$('.menu1').removeClass("menu2");
+			$('.menudonalds').addClass("menu3");
+
+			});
+		</script>
+		<script>
+		$('#img3').on('click',function(){
+			console.log("KFC clicked!");
+			$('.menu1').removeClass("menu2");
+			$('.menudonalds').removeClass("menu3");
+			$('.kfcmenu').addClass("menu4");
+			
+		});
+		</script>
+<script>
+$('#img4').on('click',function(){
+	$('.kfcmenu').removeClass("menu4");
+			$('.menu1').removeClass("menu2");
+			$('.menudonalds').removeClass("menu3");
+			$('.ddmenu').addClass("menu5");
+});
+</script>

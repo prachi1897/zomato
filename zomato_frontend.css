@@ -1,0 +1,56 @@
+body{
+	background-image: url("icons-of-sketchy-food_23-2147507464.jpg");
+}
+h1{
+	text-align:center;
+
+}
+.menu1{
+	background-color:#D3D3D3;
+	border:2px dotted black;
+	width:20%;
+	display:none;
+}
+.menu2
+{
+	display:block;
+}
+.hidden{
+	disply:none;
+}
+.menudonalds{
+	background-color:#f1f1c2;
+	border:2px dotted black;
+	width:20%;
+	display:none;
+
+}
+.menu3{
+	display:inline-block;
+	margin:100px;
+
+}
+
+
+.kfcmenu{
+	background-color:#f1c1c2;
+	border:2px dotted black;
+	width:20%;
+	display:none;
+}
+.ddmenu{
+	background-color:#f1c1c2;
+	border:2px dotted black;
+	width:20%;
+	display:none;
+
+	
+}
+.menu4{
+	display:inline-block;
+	margin:200px;
+}
+.menu5{
+	display:inline-block;
+	margin:300px;
+}
