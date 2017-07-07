@@ -15,9 +15,13 @@
 			<img src="KFC_logo.svg.png"alt="image3"id="img3">
 			<img src="Screenshot_2017-07-05-12-43-11-722_edited.jpg" alt="img4" width="35%" id="img4">
 		</div>
+		<!--hidden class-->
+		<div class="hidden">
+		</div>
 
 		<!--menu for dominos-->
-		<div class="menu1">
+		<div class="hidden dominosmenu">
+		<h2><u>Dominos</u></h2>
 		<ul>
 		<li>Peppy Paneer</li>
 		<input type="checkbox">
@@ -35,7 +39,8 @@
 
 
 		<!--menu for mcdonalds-->
-		<div class="menudonalds">
+		<div class=" hidden menudonalds">
+		<h2><u>Mc donalds</u></h2>
 		<ul>
 			<li>Mcveggie</li>
 			<input type="checkbox">
@@ -51,7 +56,8 @@
 
 
 <!--menu for KFC-->
-		<div class="kfcmenu">
+		<div class="hidden kfcmenu ">
+		<h2><u>KFC</u></h2>
 		<ul>
 		<li>Chicken Zinger</li>
 		<input type="checkbox">
@@ -66,7 +72,8 @@
 		</div>
 
 		<!--menu for DD-->
-		<div class="ddmenu">
+		<div class="hidden ddmenu">
+		<h2><u>DunkinDonuts</u></h2>
 		<ul>
 		<li>Hot Chocolate</li>
 		<input type="checkbox">
@@ -82,34 +89,43 @@
 
 		<script src="jquery-2.2.0.js"></script>
 		<script>
-		$('#img1').on('click',function(){
-
-			$('.menu1').addClass("menu2");
-
-			
-		});
-		</script>
-		<script>
-		$('#img2').on('click',function(){
-			$('.menu1').removeClass("menu2");
-			$('.menudonalds').addClass("menu3");
-
+			$('#img1').on('click',function(){
+				$('.dominosmenu').toggleClass("hidden");
+				$('.ddmenu').addClass("hidden");
+				$('.kfcmenu').addClass("hidden");
+				$('.menudonalds').addClass("hidden");
 			});
 		</script>
 		<script>
-		$('#img3').on('click',function(){
-			console.log("KFC clicked!");
-			$('.menu1').removeClass("menu2");
-			$('.menudonalds').removeClass("menu3");
-			$('.kfcmenu').addClass("menu4");
-			
-		});
+			$('#img2').on('click',function(){
+				$('.dominosmenu').addClass("hidden");
+				$('.menudonalds').toggleClass("hidden");
+				$('.ddmenu').addClass("hidden");
+				$('.kfcmenu').addClass("hidden");
+
+				});
 		</script>
-<script>
-$('#img4').on('click',function(){
-	$('.kfcmenu').removeClass("menu4");
-			$('.menu1').removeClass("menu2");
-			$('.menudonalds').removeClass("menu3");
-			$('.ddmenu').addClass("menu5");
-});
-</script>
+		<script>
+			$('#img3').on('click',function(){
+				
+				$('.dominosmenu').addClass("hidden");
+				$('.menudonalds').addClass("hidden");
+				$('.kfcmenu').toggleClass("hidden");
+				$('.ddmenu').addClass("hidden");
+				
+			});
+		</script>
+		<script>
+			$('#img4').on('click',function(){
+				$('.kfcmenu').addClass("hidden");
+				$('.dominosmenu').addClass("hidden");
+				$('.menudonalds').addClass("hidden");
+				$('.ddmenu').toggleClass("hidden");
+			});
+		</script>
+<!-- // <script>
+// 	$('checkbox').on('click',function(){
+// 		var count=document.$('checkbox').length;
+// 		if Number(count)<0
+// 		alert("No box selected");
+// 			}); -->

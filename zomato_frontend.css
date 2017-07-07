@@ -5,29 +5,20 @@ h1{
 	text-align:center;
 
 }
-.menu1{
+.dominosmenu{
 	background-color:#D3D3D3;
 	border:2px dotted black;
 	width:20%;
-	display:none;
-}
-.menu2
-{
-	display:block;
+	float:left;
 }
 .hidden{
-	disply:none;
+	display:none;
 }
 .menudonalds{
 	background-color:#f1f1c2;
 	border:2px dotted black;
 	width:20%;
-	display:none;
-
-}
-.menu3{
-	display:inline-block;
-	margin:100px;
+	float:left;
 
 }
 
@@ -36,21 +27,12 @@ h1{
 	background-color:#f1c1c2;
 	border:2px dotted black;
 	width:20%;
-	display:none;
+	float:left;
 }
+
 .ddmenu{
 	background-color:#f1c1c2;
 	border:2px dotted black;
 	width:20%;
-	display:none;
-
-	
-}
-.menu4{
-	display:inline-block;
-	margin:200px;
-}
-.menu5{
-	display:inline-block;
-	margin:300px;
+	float:left;
 }
